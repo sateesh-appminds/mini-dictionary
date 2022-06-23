@@ -1,0 +1,81 @@
+.dictionary {
+  margin: 0 auto;
+
+  &__top {
+    text-align: center;
+    padding: 20px;
+    background: #d3d3d3;
+
+    &__head {
+      font-size: 25px;
+    }
+
+    &__form {
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto 25px;
+
+      &__text {
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 16px;
+
+        &:focus {
+          box-shadow: 0 0 3px #ccc;
+        }
+      }
+
+      &__btn {
+        width: auto;
+        background: #000;
+        color: #fff;
+        border: 1px solid #000;
+        padding: 0 25px;
+        border-radius: 0 5px 5px 0;
+        font-size: 16px;
+        cursor: pointer;
+        min-width: 104px;
+
+        &:hover {
+          background-color: #666;
+          border-color: #666;
+        }
+
+        img {
+          max-width: 30px;
+          display: flex;
+        }
+      }
+
+      .loading {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: #f2f2f2;
+    min-height: calc(100vh - 185px);
+    padding-top: 25px;
+
+    ol {
+      margin: 0 auto;
+      margin-top: 0;
+      max-width: 700px;
+
+      li {
+        padding-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+
+    &__alert {
+      color: red;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+}

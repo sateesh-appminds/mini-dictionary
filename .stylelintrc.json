@@ -1,0 +1,7 @@
+{
+    "extends": ["stylelint-config-standard-scss"],
+    "rules": {
+        "max-nesting-depth": 8,
+        "selector-max-compound-selectors": 6
+    }
+  }
