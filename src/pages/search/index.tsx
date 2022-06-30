@@ -64,7 +64,7 @@ function Search() {
             placeholder="Search here.."
             onChange={handleInputChange}
           />
-          <button type="submit" className={loading ? classNames('dictionary__top__form__btn', 'loading') : classNames('dictionary__top__form__btn')} disabled={loading} data-testid="search">
+          <button type="submit" className={classNames('dictionary__top__form__btn', { loading })} disabled={loading} data-testid="search">
             {loading ? <img src={LoadIcon} alt="Loading..." /> : 'Search'}
           </button>
         </form>
